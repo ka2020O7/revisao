@@ -1,26 +1,83 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="revisa" href="revisao.css">
-    <title>Revisao </title>
-
-
+    <script src="javascript.js"></script>
+    <title>Revisão para Prova</title>
+    <link rel="stylesheet" href="revisao.css">
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1>Conteúdos para a Prova</h1>
+            <nav>
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#git">Git/GitHub</a></li>
+                    <li><a href="#js">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<header>
+        <main>
+            <section id="html" class="card">
+                <h2>HTML</h2>
+                <p>HTML é a linguagem de marcação para criar páginas web.</p>
+                <h3>Elementos importantes:</h3>
+                <ul>
+                    <li>&lt;html&gt; - Define o documento HTML</li>
+                    <li>&lt;head&gt; - Contém metadados</li>
+                    <li>&lt;body&gt; - Corpo do documento</li>
+                    <li>&lt;div&gt; - Container genérico</li>
+                </ul>
+            </section>
 
-</header>   
+            <section id="css" class="card">
+                <h2>CSS</h2>
+                <p>CSS é usado para estilizar elementos HTML.</p>
+                <h3>Propriedades básicas:</h3>
+                <ul>
+                    <li>color - Cor do texto</li>
+                    <li>font-size - Tamanho da fonte</li>
+                    <li>margin - Espaçamento externo</li>
+                    <li>padding - Espaçamento interno</li>
+                </ul>
+               
+            </section>
 
-<main>
+            <section id="git" class="card">
+                <h2>Git e GitHub</h2>
+                <p>Git é como um "controlador de versões" para seus projetos de programação <br>GitHub é como uma "rede social para códigos" que usa o Git é como se fosse um "Google Drive" especial para programadores, onde além de armazenar seus arquivos, você pode ver o histórico de todas as mudanças e trabalhar com outras pessoas.
 
-</main> 
+                </p>
+                <h3>Comandos básicos:</h3>
+                <ol>
+                    <li>git init - Inicia um repositório</li>
+                    <li>git add . - Adiciona arquivos</li>
+                    <li>git commit -m "mensagem" - Salva alterações</li>
+                    <li>git push - Envia para o GitHub</li>
+                </ol>
+            </section>
 
-<footer>
+            <section id="js" class="card">
+                <h2>JavaScript</h2>
+                <p>JavaScript (JS) é uma linguagem de programação usada para criar páginas da web interativas</p>
+                <div class="exemplo-js">
+                    <p id="texto">clica no boatao ai fi</p>
+                    <button class="btn" onclick="mudarTexto()">Mudar Texto</button>
+                    <button class="btn" onmouseover="mudarCor(this)" onmouseout="voltarCor(this)">Passe o mouse</button>
+                </div>
+            </section>
+        </main>
 
-</footer>
+        <footer>
+            
+        </footer>
+    </div>
 
+    
 </body>
 </html>
