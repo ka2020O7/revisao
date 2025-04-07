@@ -1,4 +1,4 @@
-// Função para mudar o texto
+
 function mudarTexto() {
     const texto = document.getElementById('texto');
     if (texto.textContent.includes("Clique")) {
@@ -10,7 +10,7 @@ function mudarTexto() {
     }
 }
 
-// Funções para mudar a cor do botão
+
 function mudarCor(botao) {
     botao.style.backgroundColor = "#e74c3c";
 }
